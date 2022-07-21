@@ -8,7 +8,7 @@ module.exports = {
         if(message.author.bot) { return; }
 
         // Verify has our prefix
-        if(!message.startWith(prefix)) { return; }
+        if(message.content.indexOf(prefix) !== 0) { return; }
 
         // 🥞 Split content
         const args = message.content.slice(prefix.length).trim().split(/ +/g);
