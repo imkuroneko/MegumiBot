@@ -7,6 +7,9 @@ module.exports = {
         // 🚨 Ignore bots
         if(message.author.bot) { return; }
 
+        // Verify has our prefix
+        if(!message.startWith(prefix)) { return; }
+
         // 🥞 Split content
         const args = message.content.slice(prefix.length).trim().split(/ +/g);
         const command = args.shift().toLowerCase();
