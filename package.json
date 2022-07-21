@@ -11,7 +11,7 @@
     "opusscript": "^0.0.8"
   },
   "name": "megumimusicbot",
-  "description": "🎶 Bot de música para discord (para aprender mejor la gestión de multimedia y demás)",
+  "description": "🎶 Pequeño bot de música basado en distube para uso personal",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
